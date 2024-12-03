@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* Details Section */
+        .details-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .details-item {
+            margin-bottom: 15px;
+        }
+
+        .details-item h1,
+        .details-item h2 {
+            margin-bottom: 10px;
+        }
+
+        .details-item h1 {
+            color: #007BFF;
+            font-size: 1.5rem;
+        }
+
+        .details-item h2 {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Post in Detail</h1>
+    </header>
+    <main class="details-container">
+        <div class="details-item">
+            <h1>Id: <%= post.id %></h1>
+        </div>
+        <div class="details-item">
+            <h2>Username: <%= post.username %></h2>
+        </div>
+        <div class="details-item">
+            <h2>Content: <%= post.content %></h2>
+        </div>
+    </main>
+</body>
+</html>
